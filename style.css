@@ -1,0 +1,81 @@
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.sidebar {
+	background-color: #01182B;
+}
+
+.sidebar > .nav-pills {
+  top: 20px;
+  left: 40px;
+  position: fixed;
+}
+
+.sidebar .fa {
+	margin-right: 10px;
+}
+
+.main li a:hover {
+	background-color: #FFFFCC;
+}
+
+.modal-dialog {
+	width: 400px;
+}
+
+.foto {
+	padding-top: 20px;
+}
+
+[id*="e"] .nav {
+	margin: auto;
+	width: 295px;
+	padding: 5px;
+}
+
+[id*="e"] .fa {
+	margin-left: 5px;
+}
+
+#e0 .fa {
+	margin-left: 0px;
+}
+
+
+
+@media (max-width: 767px) {
+
+  	.sidebar {
+		height: auto;
+	}
+
+	.sidebar > .nav-pills {
+  		position: static;
+	}
+
+	#e3 button {
+		margin-top: 10px;
+	}
+}
+
+.example {
+	background-color: white;
+	/*border-bottom: 5px solid #A69B44;*/
+	border-bottom: 5px solid #999933;
+	/*margin-left: 20x;*/
+	/*margin-right: 20px;*/
+}
+
+[id*="e"] {
+	height: auto;
+}
+
+#e0 .nav {
+	padding-bottom: 5px;
+}
+
+#e1 .circle-img {
+	margin-left: 15px;
+}
