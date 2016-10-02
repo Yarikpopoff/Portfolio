@@ -79,3 +79,9 @@ var mySource = [
 $('#e3 input').typeahead({
 	 source: mySource
 });
+
+$('.toggle').on('click', function (e) {
+	debugger;
+	$('.sidebar').toggleClass('toggled');
+	$('.main').toggleClass('toggled');
+})
