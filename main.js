@@ -3,12 +3,14 @@ const MAX_INPUT_SYMBOL_COUNT = 40;
 $('[data-toggle="tooltip"]').tooltip();
 
 function sidebarHeightSet() {
-
-	if ($(document).width() > 767) {
-  	var heightMain = document.querySelector('.main').offsetHeight;
-  	document.querySelector('.sidebar').style.height = heightMain + 'px';
+	// console.log($(document).width());
+	if ($(document).width() > 780) {
+	  	var heightMain = document.querySelector('.main').offsetHeight;
+  		document.querySelector('.sidebar').style.height = heightMain + 'px';
+  		// if ($('.sidebar').hasClass('toggled')) $('.sidebar').toggleClass('toggled');
 	} else {
 		document.querySelector('.sidebar').style.height = 'auto';
+		// if (!$('.sidebar').hasClass('toggled')) $('.sidebar').toggleClass('toggled');
 	} 
 
 }
@@ -81,7 +83,7 @@ $('#e3 input').typeahead({
 });
 
 $('.toggle').on('click', function (e) {
-	debugger;
+	e.preventDefault();
 	$('.sidebar').toggleClass('toggled');
 	$('.main').toggleClass('toggled');
 })

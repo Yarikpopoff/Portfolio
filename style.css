@@ -35,7 +35,7 @@ body {
 
 .sidebar > .nav-pills {
   top: 20px;
-  left: 40px;
+  left: 28px;
   position: fixed;
 }
 
@@ -71,7 +71,7 @@ body {
 
 
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
 
   	.sidebar {
 		height: auto;
